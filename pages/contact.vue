@@ -4,7 +4,12 @@
   };
 </script>
 <template>
-  <div></div>
+  <div>
+<h2>sono la pagina di contatti</h2>
+
+  </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>
