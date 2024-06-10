@@ -4,7 +4,7 @@
   };
 </script>
 <template>
-  <div></div>
+  <div>home page modificata da salvatore</div>
 </template>
 
 <style lang="scss" scoped></style>
