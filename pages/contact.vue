@@ -1,15 +1,12 @@
 <script>
-  export default {
-    name: "contact",
-  };
+export default {
+  name: "contact",
+};
 </script>
 <template>
   <div>
-<h2>sono la pagina di contatti</h2>
-
+    <h2>sono la pagina di contatti</h2>
   </div>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
