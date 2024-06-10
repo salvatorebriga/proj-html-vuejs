@@ -3,6 +3,64 @@
     name: "AppJumbo",
   };
 </script>
-<template></template>
+<template>
+  <div class="jumbo">
+    <div class="content">
+      <h1>We are Everlead<span>.</span></h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+        quaerat architecto ratione quod.
+      </p>
+      <div>
+        <button>
+          <span>READ MORE</span> <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="orange">
+          <span>PURCHASE</span> <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .jumbo {
+    height: 100vh;
+    background-image: url("/img/jumboImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    .content {
+      padding-left: 150px;
+      h1 {
+        font-size: 75px;
+        margin-bottom: 50px;
+        span {
+          color: orangered;
+        }
+      }
+
+      p {
+        margin-bottom: 60px;
+      }
+
+      button {
+        padding: 20px;
+        margin-right: 20px;
+        border: none;
+
+        span {
+          margin-right: 50px;
+        }
+      }
+    }
+
+    .orange {
+      background-color: orangered;
+      color: white;
+    }
+  }
+</style>
