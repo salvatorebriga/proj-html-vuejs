@@ -52,8 +52,18 @@
         margin-right: 20px;
         border: none;
 
+        &:hover > span {
+          margin-right: 10px;
+          transition: 0.5s;
+        }
+
+        &:hover > i {
+          margin-right: 20px;
+          transition: 0.5s;
+        }
+
         span {
-          margin-right: 50px;
+          margin-right: 30px;
         }
       }
     }
