@@ -4,7 +4,7 @@
   };
 </script>
 <template>
-  <div></div>
+  <div>sono aboutUs</div>
 </template>
 
 <style lang="scss" scoped></style>
