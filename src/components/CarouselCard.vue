@@ -8,6 +8,11 @@
 <template>
   <div class="card">
     <img :src="img" :alt="img" />
+
+    <div class="label">
+      <i class="fas fa-tag"></i>
+      <p>Business, Leading</p>
+    </div>
     <div class="info">
       <i class="fas fa-clock"></i>
       <span> {{ time }} </span>
@@ -28,7 +33,32 @@
     border: none;
     width: 500px;
     background-color: transparent;
-    text-align: center;
+    text-align: left;
+    position: relative;
+
+    .label {
+      position: absolute;
+      background-color: variables.$arancione;
+      bottom: 160px;
+      right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+
+      i {
+        margin-right: 10px;
+      }
+
+      p {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0;
+        color: rgb(255, 255, 255);
+      }
+    }
 
     img {
       width: 100%;
@@ -61,8 +91,6 @@
     }
 
     p {
-      padding-left: 20px;
-      padding-right: 20px;
       color: variables.$grigio-paragrafi;
     }
   }

@@ -110,11 +110,6 @@
         margin: 0 auto;
         margin-bottom: 50px;
       }
-
-      .carousel_item {
-        margin: 50px;
-        width: calc(100% / 3 - 100px);
-      }
     }
   }
 </style>
