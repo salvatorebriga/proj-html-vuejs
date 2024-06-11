@@ -13,15 +13,23 @@
         <div class="col-md-6">
         <ul class="list-unstyled list-inline">
           <li class="list-inline-item">
-           <a href="#" class=""> +44 300 303 0266</a>
+           <a href="#" class="link-font-size"><i class="fa-solid fa-phone"></i><span>Call +44 300 303 0266</span></a>
           </li>
           <li class="list-inline-item">
-           <a href="#">everlead@qodeinteractive.com</a>
+           <a href="#"><i class="fa-regular fa-envelope"></i><span>everlead@qodeinteractive.com</span></a>
           </li>
           <li class="list-inline-item">
             follow us
           </li>
-          <li class="list-inline-item">icone</li>
+          <li class="list-inline-item">
+            <i class="fa-brands fa-linkedin"></i>
+          </li>
+          <li class="list-inline-item">
+             <i class="fa-brands fa-facebook"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fa-brands fa-square-twitter"></i>
+          </li>
         </ul>
         
         </div>
@@ -31,10 +39,16 @@
         <div class="col-md-6 text-end">
          <ul class="list-unstyled list-inline">
           <li class="list-inline-item">
-             <a href="#" class="ms-3" data-toggle="modal" data-target="#loginModal">Login</a>
+             <a href="#" class="ms-3" data-toggle="modal" data-target="#loginModal">
+              <i class="fa-regular fa-user"></i>
+              <span>login</span>
+            </a>
           </li>
           <li class="list-inline-item">
-             <a href="#" class="ms-3" data-toggle="modal" data-target="#registerModal">Register</a>
+             <a href="#" class="ms-3" data-toggle="modal" data-target="#registerModal">
+              <i class="fa-solid fa-pen"></i>
+              <span>register</span>
+            </a>
           </li>
          </ul>
 
@@ -62,10 +76,13 @@
   a {
     color: #d2d2d2;
     margin-right: 15px;
+    font-size: 13px;
 
     &:hover {
       color: #ffffff;
     }
+
+    
   }
 }
 
