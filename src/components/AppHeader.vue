@@ -9,19 +9,36 @@
   <!-- left section -->
   <div class="top-bar">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-6">
-          numero di telefono
-          <span>email</span>
-          <span>follow us</span>
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+           <a href="#" class=""> +44 300 303 0266</a>
+          </li>
+          <li class="list-inline-item">
+           <a href="#">everlead@qodeinteractive.com</a>
+          </li>
+          <li class="list-inline-item">
+            follow us
+          </li>
+          <li class="list-inline-item">icone</li>
+        </ul>
+        
         </div>
         <!-- left section -->
         
         <!-- right section -->
-        <div class="col-md-6">
-          
-          <a href="#" class="ml-3" data-toggle="modal" data-target="#loginModal">Login</a>
-                      <a href="#" class="ml-3" data-toggle="modal" data-target="#registerModal">Register</a>
+        <div class="col-md-6 text-end">
+         <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+             <a href="#" class="ms-3" data-toggle="modal" data-target="#loginModal">Login</a>
+          </li>
+          <li class="list-inline-item">
+             <a href="#" class="ms-3" data-toggle="modal" data-target="#registerModal">Register</a>
+          </li>
+         </ul>
+
+         
         </div>
         <!-- /right section -->
 
@@ -36,4 +53,21 @@
   </ul>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.top-bar {
+  background-color: #181515;
+  color: #d2d2d2;
+  padding: 10px 0;
+
+  a {
+    color: #d2d2d2;
+    margin-right: 15px;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+
+</style>
