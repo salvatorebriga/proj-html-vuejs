@@ -1,6 +1,16 @@
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      searchVisible: false, // Impostazione iniziale: barra di ricerca nascosta
+    };
+  },
+  methods: {
+    toggleSearch() {
+      this.searchVisible = !this.searchVisible; // Inverti lo stato della visibilità della ricerca
+    },
+  },
 };
 </script>
 
@@ -218,21 +228,28 @@ export default {
                 </li>
               </ul>
             </div>
+            <!-- search bar -->
+            <div class="search-bar">
+              <input
+                v-show="searchVisible"
+                type="text"
+                placeholder="Cerca..."
+              />
+              <button @click="toggleSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <!-- /search bar -->
+            <!-- Burger menu -->
+            <button @click="toggleSideMenu" class="burger-menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- side menu section -->
+            <!-- /side menu section -->
+            <!-- burger menu -->
           </nav>
 
           <!-- navbar -->
-
-          <!-- <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <router-link :to="{ name: 'homepage' }">homepage</router-link>
-            </li>
-            <li class="list-inline-item">
-              <router-link :to="{ name: 'aboutUs' }">About Us</router-link>
-            </li>
-            <li class="list-inline-item">
-              <router-link :to="{ name: 'contact' }">contact</router-link>
-            </li>
-          </ul> -->
         </div>
       </div>
     </div>
@@ -259,5 +276,30 @@ export default {
 
 .logo {
   height: 24px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+.search-bar input {
+  width: 200px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Stile per l'icona di ricerca */
+.search-bar button i {
+  font-size: 16px;
 }
 </style>
