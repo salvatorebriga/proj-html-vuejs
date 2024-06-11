@@ -1,0 +1,49 @@
+@use "./partials/variables.scss" as *;
+ul {
+  margin: auto;
+  padding: 50px;
+  li {
+    margin: 20px 0;
+
+    h2 {
+      font-weight: 800;
+      span {
+        color: $arancione;
+        margin-left: -5px;
+      }
+    }
+
+    .orange {
+      color: $arancione;
+    }
+
+    a {
+      span {
+        color: $grigino;
+        font-weight: 100;
+        font-size: small;
+        margin-left: 10px;
+      }
+
+      &:hover span {
+        color: $arancione;
+        cursor: pointer;
+      }
+    }
+    .social {
+      i {
+        color: white;
+        background-color: $arancione;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        padding-top: 6px;
+        margin-right: 10px;
+      }
+      &:hover i {
+        background-color: black;
+      }
+    }
+  }
+}
