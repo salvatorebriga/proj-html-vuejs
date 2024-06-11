@@ -1,34 +1,119 @@
 <script>
-  export default {
+  import { defineComponent } from "vue";
+  import { Carousel, Navigation, Slide } from "vue3-carousel";
+
+  import "vue3-carousel/dist/carousel.css";
+
+  import CarouselCard from "./CarouselCard.vue";
+
+  export default defineComponent({
     name: "latestNews",
     data() {
-      return {};
+      return {
+        slideElement: [
+          {
+            img: "/img/latestNews1.jpg",
+            time: "May 5, 2019",
+            artist: "Amanda Doe",
+            heading: "New Business Day",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius mas tellus dolor ...",
+          },
+          {
+            img: "/img/latestNews2.jpg",
+            time: "May 5, 2019",
+            artist: "Amanda Doe",
+            heading: "Team Building",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius mas tellus dolor ...",
+          },
+          {
+            img: "/img/latestNews3.jpg",
+            time: "May 5, 2019",
+            artist: "Amanda Doe",
+            heading: "Boost Motivation",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius mas tellus dolor ...",
+          },
+          {
+            img: "/img/latestNews4.jpg",
+            time: "May 5, 2019",
+            artist: "Amanda Doe",
+            heading: "Next Investment",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius mas tellus dolor ...",
+          },
+        ],
+      };
     },
-  };
+    components: {
+      Carousel,
+      Slide,
+      Navigation,
+      CarouselCard,
+    },
+  });
 </script>
 
 <template>
-  <div class="container">
-    <h2>Latest news<span>.</span></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    <div class="line"></div>
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="" alt="" />
-          <div class="label"></div>
-          <div class="info"></div>
-          <h3></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius
-            mas tellus dolor ...
-          </p>
+  <section>
+    <div class="container">
+      <h2>Latest news<span>.</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="line"></div>
 
-          <h5>READ MORE</h5>
-        </div>
-      </div>
+      <Carousel :items-to-show="2.5" :wrap-around="true">
+        <Slide v-for="slide in slideElement" :key="slide">
+          <div class="carousel__item">
+            <CarouselCard
+              :img="slide.img"
+              :time="slide.time"
+              :artist="slide.artist"
+              :heading="slide.heading"
+              :text="slide.text"
+            />
+          </div>
+        </Slide>
+
+        <template #addons>
+          <Navigation />
+        </template>
+      </Carousel>
     </div>
-  </div>
+  </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  @use "/src/assets/scss/partials/variables.scss";
+
+  section {
+    background-color: variables.$bg-grigio;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    .container {
+      text-align: center;
+      h2 {
+        font-size: 50px;
+        margin-bottom: 15px;
+
+        span {
+          color: variables.$arancione;
+        }
+      }
+
+      p {
+        color: variables.$grigio-paragrafi;
+        margin-bottom: 25px;
+      }
+
+      .line {
+        background-color: variables.$arancione;
+        width: 60px;
+        height: 2px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+
+      .carousel_item {
+        margin: 50px;
+        width: calc(100% / 3 - 100px);
+      }
+    }
+  }
+</style>
