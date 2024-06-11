@@ -1,4 +1,4 @@
-@use "./partials/variables.scss";
+@use "./partials/variables.scss" as *;
 .footer {
   font-size: 18px;
   font-weight: 300;
@@ -6,10 +6,10 @@
   color: white;
 
   .principale {
-    background-color: variables.$marrone;
+    background-color: $marrone;
     padding: 100px 0 100px 0;
     ::selection {
-      background-color: variables.$arancione;
+      background-color: $arancione;
       color: white;
     }
 
@@ -21,7 +21,7 @@
             li {
               margin: 5px 0;
               font-size: small;
-              color: variables.$grigino;
+              color: $grigino;
 
               h5 {
                 color: white;
@@ -33,7 +33,7 @@
                 width: 35px;
                 height: 1px;
                 margin-top: 20px;
-                background-color: variables.$arancione;
+                background-color: $arancione;
               }
 
               .social {
@@ -47,7 +47,7 @@
                 margin-right: 10px;
 
                 &:hover {
-                  background-color: variables.$arancione;
+                  background-color: $arancione;
                   transition: all 0.3s ease-in-out;
                 }
               }
@@ -59,7 +59,7 @@
                 }
 
                 i {
-                  color: variables.$arancione;
+                  color: $arancione;
                   margin-right: 5px;
                 }
               }

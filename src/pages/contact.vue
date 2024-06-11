@@ -10,9 +10,6 @@ export default {
 };
 </script>
 <template>
-  <div>
-    <h2>sono la pagina di contatti</h2>
-  </div>
   <ContactusContatti />
   <ContactusForm />
 </template>

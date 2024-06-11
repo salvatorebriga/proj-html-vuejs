@@ -1,4 +1,4 @@
-@use "./partials/variables.scss";
+@use "./partials/variables.scss" as *;
 .container {
   .row {
     align-items: center;
@@ -9,15 +9,15 @@
       h2 {
         font-size: xxx-large;
         span {
-          color: variables.$arancione;
+          color: $arancione;
           margin-left: -10px;
         }
       }
       p {
-        color: variables.$grigino;
+        color: $grigino;
       }
       .line {
-        background-color: variables.$arancione;
+        background-color: $arancione;
         width: 60px;
         height: 2px;
         margin: 30px auto;

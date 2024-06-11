@@ -1,4 +1,4 @@
-@use "./partials/variables.scss";
+@use "./partials/variables.scss" as *;
 .image {
   background-image: url("../public/img/contact-us-img-02.jpg");
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     position: relative;
     right: 0;
     margin: auto 0;
-    background-color: variables.$arancione;
+    background-color: $arancione;
     padding: 70px 60px;
     color: white;
 
