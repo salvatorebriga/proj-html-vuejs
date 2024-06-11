@@ -69,6 +69,11 @@
       width: 100%;
       height: 350px;
       margin-bottom: 20px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .info {
