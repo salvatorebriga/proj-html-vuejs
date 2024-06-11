@@ -1,0 +1,41 @@
+@use "./partials/variables.scss";
+.image {
+  background-image: url("../public/img/contact-us-img-02.jpg");
+  object-fit: cover;
+}
+
+.row {
+  align-items: right;
+
+  .col-5 {
+    position: relative;
+    right: 0;
+    margin: 50px 0;
+    background-color: variables.$arancione;
+    padding: 70px 60px;
+    color: white;
+
+    h2 {
+      font-size: xxx-large;
+    }
+
+    form {
+      input,
+      textarea {
+        color: white;
+        background: none;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid white;
+      }
+
+      button {
+        color: white;
+        padding: 15px 50px;
+        border: 1px solid white;
+        border-radius: 0;
+        margin-top: 50px;
+      }
+    }
+  }
+}
