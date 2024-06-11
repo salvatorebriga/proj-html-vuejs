@@ -49,6 +49,8 @@
 </template>
 
 <style lang="scss" scoped>
+  @use "../assets/scss/partials/variables.scss";
+
   .container {
     text-align: center;
     padding-top: 100px;
@@ -58,17 +60,17 @@
       font-size: 50px;
       margin-bottom: 15px;
       span {
-        color: orangered;
+        color: variables.$arancione;
       }
     }
 
     p {
-      color: gray;
+      color: variables.$grigio-paragrafi;
       margin-bottom: 25px;
     }
 
     .line {
-      background-color: orangered;
+      background-color: variables.$arancione;
       width: 60px;
       height: 2px;
       margin: 0 auto;
@@ -89,7 +91,7 @@
           .circle {
             height: 150px;
             width: 150px;
-            border: 1px solid orangered;
+            border: 1px solid variables.$arancione;
             margin: 0 auto;
             margin-bottom: 40px;
             border-radius: 50%;

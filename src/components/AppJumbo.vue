@@ -24,6 +24,7 @@
 </template>
 
 <style lang="scss" scoped>
+  @use "../assets/scss/partials/variables.scss";
   .jumbo {
     height: 100vh;
     background-image: url("/img/jumboImage.jpg");
@@ -39,7 +40,7 @@
         font-size: 75px;
         margin-bottom: 50px;
         span {
-          color: orangered;
+          color: variables.$arancione;
         }
       }
 
@@ -69,7 +70,7 @@
     }
 
     .orange {
-      background-color: orangered;
+      background-color: variables.$arancione;
       color: white;
     }
   }
