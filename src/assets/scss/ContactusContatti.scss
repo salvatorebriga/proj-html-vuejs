@@ -1,0 +1,27 @@
+@use "./partials/variables.scss";
+.container {
+  .row {
+    align-items: center;
+
+    .col-12 {
+      text-align: center;
+
+      h2 {
+        font-size: xxx-large;
+        span {
+          color: variables.$arancione;
+          margin-left: -10px;
+        }
+      }
+      p {
+        color: variables.$grigino;
+      }
+      .line {
+        background-color: variables.$arancione;
+        width: 60px;
+        height: 2px;
+        margin: 30px auto;
+      }
+    }
+  }
+}
