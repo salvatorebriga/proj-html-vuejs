@@ -14,11 +14,14 @@ export default {
               <li>
                 <h5>About</h5>
               </li>
-              <!-- <li><hr class="linea" /></li> -->
-              <li>prova</li>
-              <li>prova</li>
-              <li>prova</li>
-              <li>prova</li>
+              <li>
+                <p>
+                  We created Everlead to effectively become the stepping stone
+                  towards meeting all your goals & achieving business success.
+                </p>
+              </li>
+
+              <li>icone</li>
             </ul>
           </div>
           <div class="col-3">
@@ -26,10 +29,7 @@ export default {
               <li>
                 <h5>Twitter</h5>
               </li>
-              <li>prova</li>
-              <li>prova</li>
-              <li>prova</li>
-              <li>prova</li>
+              <li>Couldn't connect with Twitter</li>
             </ul>
           </div>
           <div class="col-3">
@@ -37,10 +37,21 @@ export default {
               <li>
                 <h5>Important links</h5>
               </li>
-              <li>prova</li>
-              <li>prova</li>
-              <li>prova</li>
-              <li>prova</li>
+              <li>
+                <a href="#">About me</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Language packs</a>
+              </li>
+              <li>
+                <a href="#">Become a coach</a>
+              </li>
+              <li>
+                <a href="#">Monthly events</a>
+              </li>
             </ul>
           </div>
           <div class="col-3">
@@ -48,10 +59,14 @@ export default {
               <li>
                 <h5>Contact me</h5>
               </li>
-              <li>prova</li>
-              <li>prova</li>
-              <li>prova</li>
-              <li>prova</li>
+              <li><a href="#">iconcina prova</a></li>
+              <li><a href="#">iconcina prova</a></li>
+              <li><a href="#">iconcina prova</a></li>
+              <li></li>
+              <li>
+                <input type="text" placeholder="Your Name" />
+                <button>SUBSCRIBE</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -73,7 +88,11 @@ export default {
   .principale {
     background-color: rgb(24, 21, 21);
     // height: 400px;
-    padding: 70px;
+    padding: 90px 0;
+    ::selection {
+      background-color: #ff4612;
+      color: white;
+    }
 
     .container {
       .row {
@@ -81,7 +100,13 @@ export default {
           ul {
             list-style: none;
             li {
-              margin: 20px 0;
+              margin: 5px 0;
+              font-size: small;
+              color: rgb(150, 150, 150);
+
+              h5 {
+                color: white;
+              }
 
               h5::after {
                 content: "";
@@ -90,6 +115,13 @@ export default {
                 height: 1px;
                 margin-top: 20px;
                 background-color: #ff4612;
+              }
+
+              a {
+                color: rgb(150, 150, 150);
+                &:hover {
+                  color: white;
+                }
               }
             }
           }
@@ -104,9 +136,8 @@ export default {
     padding: 5px 0;
     a {
       font-size: 10px;
-      line-height: 22px;
+      font-weight: lighter;
       letter-spacing: 0.3px;
-      text-decoration: none;
       color: white;
     }
   }
