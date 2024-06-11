@@ -10,15 +10,15 @@
           },
           {
             text: "Selling",
-            img: "/img/clessidra.PNG",
+            img: "/img/persone.PNG",
           },
           {
             text: "Learning",
-            img: "/img/clessidra.PNG",
+            img: "/img/note.PNG",
           },
           {
             text: "Contact",
-            img: "/img/clessidra.PNG",
+            img: "/img/way.PNG",
           },
         ],
       };
@@ -97,7 +97,7 @@
             justify-content: center;
             align-items: center;
             background-position: center;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
 
             img {
               width: 90%;
