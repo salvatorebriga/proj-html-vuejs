@@ -114,7 +114,7 @@ export default {
   .principale {
     background-color: variables.$marrone;
     // height: 400px;
-    padding: 90px 0;
+    padding: 100px 0 235px 0;
     ::selection {
       background-color: variables.$arancione;
       color: white;
@@ -128,7 +128,7 @@ export default {
             li {
               margin: 5px 0;
               font-size: small;
-              color: rgb(150, 150, 150);
+              color: variables.$grigino;
 
               h5 {
                 color: white;
