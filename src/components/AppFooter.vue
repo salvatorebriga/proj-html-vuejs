@@ -14,6 +14,7 @@ export default {
               <li>
                 <h5>About</h5>
               </li>
+              <!-- <li><hr class="linea" /></li> -->
               <li>prova</li>
               <li>prova</li>
               <li>prova</li>
@@ -71,11 +72,28 @@ export default {
 
   .principale {
     background-color: rgb(24, 21, 21);
-    height: 400px;
+    // height: 400px;
+    padding: 70px;
 
     .container {
       .row {
-        margin: auto;
+        .col-3 {
+          ul {
+            list-style: none;
+            li {
+              margin: 20px 0;
+
+              h5::after {
+                content: "";
+                display: block;
+                width: 35px;
+                height: 1px;
+                margin-top: 20px;
+                background-color: #ff4612;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -83,9 +101,9 @@ export default {
   .finale {
     text-align: center;
     background-color: rgb(255, 70, 18);
-    padding: 12px 0;
+    padding: 5px 0;
     a {
-      font-size: 13px;
+      font-size: 10px;
       line-height: 22px;
       letter-spacing: 0.3px;
       text-decoration: none;
