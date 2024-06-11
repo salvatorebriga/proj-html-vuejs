@@ -1,26 +1,36 @@
 @use "./partials/variables.scss" as *;
-.container {
-  .row {
-    align-items: center;
+section {
+  background-color: $bg-grigio;
+  padding: 100px 0;
+  .container {
+    .row {
+      align-items: center;
 
-    .col-12 {
-      text-align: center;
+      .col-12 {
+        text-align: center;
 
-      h2 {
-        font-size: xxx-large;
-        span {
-          color: $arancione;
-          margin-left: -10px;
+        h2 {
+          font-size: xxx-large;
+          span {
+            color: $arancione;
+            margin-left: -10px;
+          }
+        }
+        p {
+          color: $grigino;
+        }
+        .line {
+          background-color: $arancione;
+          width: 60px;
+          height: 2px;
+          margin: 30px auto;
         }
       }
-      p {
-        color: $grigino;
-      }
-      .line {
-        background-color: $arancione;
-        width: 60px;
-        height: 2px;
-        margin: 30px auto;
+      .col-4 {
+        .cards {
+          background-color: white;
+          box-shadow: 0px 0px 10px 0px #c2c2c2;
+        }
       }
     }
   }

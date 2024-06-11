@@ -32,24 +32,27 @@ export default {
 };
 </script>
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Contact us <span>.</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <div class="line"></div>
-      </div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Contact us <span>.</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="line"></div>
+        </div>
 
-      <div class="col-4" v-for="city in cities">
-        <Card
-          :name="city.name"
-          :indirizzo="city.indirizzo"
-          :telefono="city.telefono"
-          :email="city.email"
-        />
+        <div class="col-4" v-for="city in cities">
+          <Card
+            class="cards"
+            :name="city.name"
+            :indirizzo="city.indirizzo"
+            :telefono="city.telefono"
+            :email="city.email"
+          />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
