@@ -31,15 +31,18 @@
           border: none;
           border-radius: 0;
           border-bottom: 1px solid white;
+          font-size: small;
         }
 
         textarea {
           height: 100px;
+          scrollbar-width: none;
         }
 
-        input[placeholder],
-        textarea[placeholder] {
+        input::placeholder,
+        textarea::placeholder {
           color: white;
+          font-size: small;
         }
       }
 
