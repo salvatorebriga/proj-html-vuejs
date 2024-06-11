@@ -3,12 +3,20 @@ export default {
   name: "AppHeader",
   data() {
     return {
-      searchVisible: false, // Impostazione iniziale: barra di ricerca nascosta
+      // Impostazione iniziale: barra di ricerca nascosta
+      searchVisible: false,
+      // Impostazione iniziale: menu laterale chiuso
+      sideMenuOpen: false,
     };
   },
   methods: {
     toggleSearch() {
-      this.searchVisible = !this.searchVisible; // Inverti lo stato della visibilità della ricerca
+      // Inverti lo stato della visibilità della ricerca
+      this.searchVisible = !this.searchVisible;
+    },
+    toggleSideMenu() {
+      // Inverti lo stato del menu laterale
+      this.sideMenuOpen = !this.sideMenuOpen;
     },
   },
 };
@@ -245,6 +253,9 @@ export default {
               <i class="fa-solid fa-bars"></i>
             </button>
             <!-- side menu section -->
+            <section :class="{ open: sideMenuOpen }" class="mkdf-side-menu">
+              sono la side bar
+            </section>
             <!-- /side menu section -->
             <!-- burger menu -->
           </nav>
@@ -301,5 +312,30 @@ export default {
 /* Stile per l'icona di ricerca */
 .search-bar button i {
   font-size: 16px;
+}
+
+/* side menu */
+.mkdf-side-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 526px;
+  padding: 127px 111px 36px 114px;
+  background-color: #1e1e1e;
+  text-align: left;
+}
+
+.mkdf-side-menu.open {
+  display: block;
+}
+
+/* burger menu */
+.burger-menu {
+  background: none;
+  border: none;
+  color: #000; /* Colore dell'icona del burger menu */
+  cursor: pointer;
+  font-size: 20px;
 }
 </style>
