@@ -6,7 +6,56 @@ export default {
 
 <template>
   <div class="footer">
-    <div class="principale"></div>
+    <div class="principale">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-3">
+            <ul>
+              <li>
+                <h5>About</h5>
+              </li>
+              <li>prova</li>
+              <li>prova</li>
+              <li>prova</li>
+              <li>prova</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>
+                <h5>Twitter</h5>
+              </li>
+              <li>prova</li>
+              <li>prova</li>
+              <li>prova</li>
+              <li>prova</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>
+                <h5>Important links</h5>
+              </li>
+              <li>prova</li>
+              <li>prova</li>
+              <li>prova</li>
+              <li>prova</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>
+                <h5>Contact me</h5>
+              </li>
+              <li>prova</li>
+              <li>prova</li>
+              <li>prova</li>
+              <li>prova</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="finale">
       <a href="#"> © 2019 Qode nteractive, All Rights Reserved </a>
     </div>
@@ -15,9 +64,20 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.556em;
+  color: white;
+
   .principale {
     background-color: rgb(24, 21, 21);
     height: 400px;
+
+    .container {
+      .row {
+        margin: auto;
+      }
+    }
   }
 
   .finale {
