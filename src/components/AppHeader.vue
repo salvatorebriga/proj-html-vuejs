@@ -82,26 +82,147 @@ export default {
 
         <div class="col-md-9 text-end">
           <!-- navbar -->
-          <div class="dropdown">
-            <a
-              class="btn btn-secondary dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
               aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              Dropdown link
-            </a>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <!-- Home Dropdown -->
+                <li class="nav-item dropdown">
+                  <router-link
+                    to="/"
+                    class="nav-link dropdown-toggle"
+                    id="homeDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Home
+                  </router-link>
+                  <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                    <li class="list-inline-item">
+                      <router-link :to="{ name: 'homepage' }"
+                        >homepage</router-link
+                      >
+                    </li>
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                  </ul>
+                </li>
+                <!-- Pages Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="pagesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <li>
+                      <router-link to="/about" class="dropdown-item"
+                        >About Us</router-link
+                      >
+                    </li>
+                    <li>Subpage</li>
+                    <li>
+                      <router-link to="/contact" class="dropdown-item"
+                        >Contact</router-link
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Blog Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="blogDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                  </ul>
+                </li>
+                <!-- Shop Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="shopDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                  </ul>
+                </li>
+                <!-- Events Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="eventsDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Events
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                  </ul>
+                </li>
+                <!-- Elements Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="elementsDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Elements
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="elementsDropdown">
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                    <li>Subpage</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
           <!-- navbar -->
 
-          <ul class="list-unstyled list-inline">
+          <!-- <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
               <router-link :to="{ name: 'homepage' }">homepage</router-link>
             </li>
@@ -111,7 +232,7 @@ export default {
             <li class="list-inline-item">
               <router-link :to="{ name: 'contact' }">contact</router-link>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
