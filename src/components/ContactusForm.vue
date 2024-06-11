@@ -18,20 +18,20 @@ export default {
               <input
                 type="email"
                 class="form-control"
-                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Your Email"
               />
             </div>
-            <div class="form-floating">
+            <div>
               <textarea
                 class="form-control"
                 placeholder="Your Message"
-                id="floatingTextarea2"
               ></textarea>
             </div>
 
-            <button type="submit" class="btn">Send</button>
+            <button type="submit" class="btn">
+              <span>Send</span> <i class="fas fa-arrow-right"></i>
+            </button>
           </form>
         </div>
       </div>

@@ -2,10 +2,11 @@
 .image {
   background-image: url("../public/img/contact-us-img-02.jpg");
   object-fit: cover;
+  padding: 100px;
 }
 
 .row {
-  align-items: right;
+  justify-content: end;
 
   .col-5 {
     position: relative;
@@ -20,21 +21,43 @@
     }
 
     form {
-      input,
-      textarea {
-        color: white;
-        background: none;
-        border: none;
-        border-radius: 0;
-        border-bottom: 1px solid white;
+      div {
+        margin: 20px 0;
+        input,
+        textarea {
+          color: white;
+          background: none;
+          border: none;
+          border-radius: 0;
+          border-bottom: 1px solid white;
+        }
+
+        input[placeholder],
+        textarea[placeholder] {
+          color: white;
+        }
       }
 
       button {
         color: white;
-        padding: 15px 50px;
+        padding: 15px 30px;
         border: 1px solid white;
         border-radius: 0;
         margin-top: 50px;
+
+        &:hover > span {
+          margin-right: 10px;
+          transition: 0.5s;
+        }
+
+        &:hover > i {
+          margin-right: 20px;
+          transition: 0.5s;
+        }
+
+        span {
+          margin-right: 30px;
+        }
       }
     }
   }
