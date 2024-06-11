@@ -65,6 +65,11 @@
 
         span {
           margin-right: 30px;
+          transition: 0.5s;
+        }
+
+        i {
+          transition: 0.5s;
         }
       }
     }
