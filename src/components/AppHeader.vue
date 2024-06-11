@@ -7,7 +7,20 @@ export default {
       searchVisible: false,
       // Impostazione iniziale: menu laterale chiuso
       sideMenuOpen: false,
+      // Impostazione iniziale: flag per indicare se si è nella home page
+      isHomePage: false,
     };
+  },
+  mounted() {
+    // Verifica se si è nella home page quando il componente viene montato
+    this.isHomePage = this.$route.path === "/";
+  },
+  watch: {
+    // Controlla se si cambia rotta
+    $route(to) {
+      // Verifica se la nuova rotta è la home page
+      this.isHomePage = to.path === "/";
+    },
   },
   methods: {
     toggleSearch() {
@@ -19,13 +32,19 @@ export default {
       this.sideMenuOpen = !this.sideMenuOpen;
     },
   },
+  props: {
+    backgroundImage: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
 <template>
   <!-- header top -->
   <!-- left section -->
-  <div class="top-bar mb-3">
+  <div class="top-bar mb-3" v-show="!isHomePage">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
