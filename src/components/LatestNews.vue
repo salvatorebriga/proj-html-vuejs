@@ -58,7 +58,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <div class="line"></div>
 
-      <Carousel :items-to-show="2.5" :wrap-around="true">
+      <Carousel :items-to-show="3" :wrap-around="true">
         <Slide v-for="slide in slideElement" :key="slide">
           <div class="carousel__item">
             <CarouselCard
@@ -88,6 +88,7 @@
     padding-top: 100px;
     .container {
       text-align: center;
+      max-width: 1900px;
       h2 {
         font-size: 50px;
         margin-bottom: 15px;
