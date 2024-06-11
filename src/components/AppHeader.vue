@@ -110,7 +110,7 @@ export default {
   <!-- /header top -->
 
   <!-- header -->
-  <header>
+  <header :class="{ hidden: isHeaderHidden }">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -289,6 +289,9 @@ export default {
 
 <style lang="scss" scoped>
 .top-bar {
+  position: relative;
+  top: 0;
+  z-index: 120;
   background-color: #181515;
   color: #d2d2d2;
   padding: 10px 0;
@@ -356,5 +359,14 @@ export default {
   color: #000; /* Colore dell'icona del burger menu */
   cursor: pointer;
   font-size: 20px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 110;
+  transition: top 0.3s;
+  background-color: transparent;
+  height: 70px;
 }
 </style>
