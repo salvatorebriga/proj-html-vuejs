@@ -23,6 +23,11 @@
     <h3>{{ heading }}</h3>
 
     <p>{{ text }}</p>
+
+    <div class="more">
+      <p>REAM MORE</p>
+      <i class="fas fa-arrow-right"></i>
+    </div>
   </div>
 </template>
 
@@ -39,7 +44,7 @@
     .label {
       position: absolute;
       background-color: variables.$arancione;
-      bottom: 160px;
+      bottom: 180px;
       right: 10px;
       display: flex;
       justify-content: center;
@@ -92,6 +97,31 @@
 
     p {
       color: variables.$grigio-paragrafi;
+    }
+
+    .more {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+      &:hover > i {
+        color: black;
+        margin-left: 20px;
+        transition: 0.5s;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: bolder;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      i {
+        color: transparent;
+        transition: 0.5s;
+      }
     }
   }
 </style>
