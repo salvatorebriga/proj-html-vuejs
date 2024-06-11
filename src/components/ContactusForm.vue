@@ -4,7 +4,7 @@ export default {
 };
 </script>
 <template>
-  <div class="image">
+  <section class="image">
     <div class="container">
       <div class="row">
         <div class="col-5">
@@ -36,7 +36,7 @@ export default {
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <style scoped lang="scss">
 @use "../assets/scss/ContactusForm";
