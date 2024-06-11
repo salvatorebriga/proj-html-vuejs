@@ -90,7 +90,9 @@ export default {
               <li></li>
               <li>
                 <input type="text" placeholder="Your Name" />
-                <button type="submit">SUBSCRIBE</button>
+                <button type="submit">
+                  <span>SUBSCRIBE</span>
+                </button>
               </li>
             </ul>
           </div>

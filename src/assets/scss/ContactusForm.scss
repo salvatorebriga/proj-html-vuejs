@@ -1,6 +1,7 @@
 @use "./partials/variables.scss";
 .image {
   background-image: url("../public/img/contact-us-img-02.jpg");
+  background-repeat: no-repeat;
   object-fit: cover;
   padding: 100px;
 }
@@ -11,7 +12,7 @@
   .col-5 {
     position: relative;
     right: 0;
-    margin: 50px 0;
+    margin: auto 0;
     background-color: variables.$arancione;
     padding: 70px 60px;
     color: white;
@@ -22,7 +23,7 @@
 
     form {
       div {
-        margin: 20px 0;
+        margin: 18px 0;
         input,
         textarea {
           color: white;
@@ -30,6 +31,10 @@
           border: none;
           border-radius: 0;
           border-bottom: 1px solid white;
+        }
+
+        textarea {
+          height: 100px;
         }
 
         input[placeholder],
