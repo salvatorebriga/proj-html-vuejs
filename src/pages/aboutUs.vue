@@ -1,10 +1,18 @@
 <script>
-  export default {
-    name: "aboutUs",
-  };
+import AboutUsJumbo from "../components/AboutUsJumbo.vue";
+import OurSpecialties from "../components/OurSpecialties.vue";
+export default {
+  name: "aboutUs",
+
+  components: {
+    AboutUsJumbo,
+    OurSpecialties,
+  },
+};
 </script>
 <template>
-  <div>sono aboutUs</div>
+  <AboutUsJumbo />
+  <OurSpecialties />
 </template>
 
 <style lang="scss" scoped></style>

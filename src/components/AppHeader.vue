@@ -366,7 +366,8 @@ header {
   width: 100%;
   z-index: 110;
   transition: top 0.3s;
-  background-color: transparent;
+  background-color: #ffffff;
   height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 </style>
