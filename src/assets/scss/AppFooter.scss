@@ -60,8 +60,24 @@
                 background: none;
                 border: none;
                 color: white;
-                margin-top: 20px;
+                margin-top: 25px;
                 border-bottom: 1px solid white;
+                &:focus {
+                  outline: none;
+                }
+              }
+
+              button {
+                margin-left: -2px;
+                i {
+                  color: transparent;
+                }
+                &:hover {
+                  i {
+                    transition: all 0.3s ease-in-out;
+                    color: $arancione;
+                  }
+                }
               }
             }
           }
