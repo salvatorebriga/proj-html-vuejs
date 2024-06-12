@@ -54,6 +54,7 @@ export default {
 <style scoped>
 .ms_big_container {
   padding: 8rem 0;
+  background-color: #fafafa;
 }
 
 .text_primary {
