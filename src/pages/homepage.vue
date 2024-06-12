@@ -4,6 +4,7 @@
   import LatestNews from "../components/LatestNews.vue";
   import AppCreative from "../components/AppCreativeLeader.vue";
   import AppVideo from "../components/AppVideo.vue";
+  import AppTestimonials from "../components/AppTestimonials.vue";
   export default {
     name: "homePage",
 
@@ -13,6 +14,7 @@
       LatestNews,
       AppVideo,
       AppCreative,
+      AppTestimonials,
     },
   };
 </script>
@@ -22,4 +24,5 @@
   <AppCreative />
   <LatestNews />
   <AppVideo />
+  <AppTestimonials />
 </template>
