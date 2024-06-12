@@ -77,6 +77,8 @@ export default {
           showTitle: false,
         },
       ],
+      // Variabile di stato per controllare la visibilità dell'ultima riga
+      showLastRow: false,
     };
   },
   methods: {
@@ -94,6 +96,9 @@ export default {
         }
       });
     },
+    toggleLastRow() {
+      this.showLastRow = !this.showLastRow;
+    },
   },
 };
 </script>
@@ -101,12 +106,35 @@ export default {
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h2>Our Gatherings</h2>
+      <div class="col-md-12 text-center">
+        <h2>Our Gatherings<span>.</span></h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="line"></div>
       </div>
       <div class="row g-3">
-        <div class="col-md-4" v-for="item in items" :key="item.id">
+        <div class="col-md-4" v-for="item in items.slice(0, 6)" :key="item.id">
+          <div class="article p-3">
+            <div
+              class="img-article"
+              @mouseenter="showTitle(item.id)"
+              @mouseleave="hideTitle(item.id)"
+            >
+              <img :src="item.image" :alt="item.alt" />
+              <div class="hoover-title" :class="{ show: item.showTitle }">
+                <div class="article-title">
+                  <h5>{{ item.title }} <span class="text-orange">.</span></h5>
+                  <p>{{ item.category }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4"
+          v-if="showLastRow"
+          v-for="item in items.slice(6, 9)"
+          :key="item.id"
+        >
           <div class="article p-3">
             <div
               class="img-article"
@@ -124,9 +152,15 @@ export default {
           </div>
         </div>
       </div>
+      <div class="col-md-12 mt-3 d-flex justify-content-center">
+        <button @click="toggleLastRow" class="orange">
+          {{ showLastRow ? "Nascondi" : "Mostra" }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .article {
   border: 1px solid #ddd;
@@ -150,17 +184,52 @@ export default {
 
 .hoover-title {
   position: absolute;
-  bottom: 0%;
-  left: 0%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: black;
   color: white;
-  padding: 20px;
-  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.hoover-title.show {
+.img-article:hover .hoover-title {
   opacity: 1;
+}
+
+button.orange {
+  background-color: #ff4612;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  span {
+    color: #ff4612;
+  }
+}
+
+p {
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.line {
+  background-color: #ff4612;
+  width: 60px;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 </style>
