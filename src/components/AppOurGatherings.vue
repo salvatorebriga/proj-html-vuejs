@@ -154,7 +154,7 @@ export default {
       </div>
       <div class="col-md-12 mt-3 d-flex justify-content-center">
         <button @click="toggleLastRow" class="orange">
-          {{ showLastRow ? "Nascondi" : "Mostra" }}
+          {{ showLastRow ? "Show less" : "Load more" }}
         </button>
       </div>
     </div>
@@ -163,8 +163,6 @@ export default {
 
 <style lang="scss" scoped>
 .article {
-  border: 1px solid #ddd;
-  padding: 15px;
   margin-bottom: 20px;
 }
 
