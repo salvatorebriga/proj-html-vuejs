@@ -35,17 +35,18 @@ section {
           border-radius: 0;
           border-bottom: 1px solid white;
           font-size: small;
+          &::placeholder {
+            color: white;
+            font-size: small;
+          }
+          &:focus {
+            box-shadow: none;
+          }
         }
 
         textarea {
           height: 100px;
           scrollbar-width: none;
-        }
-
-        input::placeholder,
-        textarea::placeholder {
-          color: white;
-          font-size: small;
         }
       }
 
