@@ -58,7 +58,13 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <div class="line"></div>
 
-      <Carousel :items-to-show="3" :wrap-around="true" :transition="1000">
+      <Carousel
+        :items-to-show="3"
+        :wrap-around="true"
+        :autoplay="3000"
+        :pauseAutoplayOnHover="true"
+        :transition="500"
+      >
         <Slide v-for="slide in slideElement" :key="slide">
           <div class="carousel__item">
             <CarouselCard
