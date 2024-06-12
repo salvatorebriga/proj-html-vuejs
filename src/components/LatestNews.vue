@@ -58,7 +58,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <div class="line"></div>
 
-      <Carousel :items-to-show="3" :wrap-around="true">
+      <Carousel :items-to-show="3" :wrap-around="true" :transition="1000">
         <Slide v-for="slide in slideElement" :key="slide">
           <div class="carousel__item">
             <CarouselCard
@@ -83,7 +83,7 @@
   @use "/src/assets/scss/partials/variables.scss";
 
   section {
-    background-color: variables.$bg-grigio;
+    background-color: white;
     padding-bottom: 100px;
     padding-top: 100px;
     .container {
