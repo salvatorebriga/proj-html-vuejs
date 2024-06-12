@@ -27,8 +27,8 @@
   <OurSpecialties />
   <AppCreative />
   <LatestNews />
-  <AppVideo />
   <AppTestimonials />
-  <AppPricingPlans />
+  <AppVideo />
   <WeCanTeachYou />
+  <AppPricingPlans />
 </template>
