@@ -1,11 +1,11 @@
 <script>
-export default {
-  name: "StatsBar",
-  props: {
-    name: String,
-    percentage: Number,
-  },
-};
+  export default {
+    name: "StatsBar",
+    props: {
+      name: String,
+      percentage: Number,
+    },
+  };
 </script>
 <template>
   <div class="mr_stat p-4">
@@ -19,14 +19,14 @@ export default {
   </div>
 </template>
 <style lang="scss" scoped>
-.mr_stat .bar {
-  height: 10px;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-}
+  .mr_stat .bar {
+    height: 5px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
 
-.mr_stat .bar .up {
-  height: 100%;
-  background-color: #ff4612;
-}
+  .mr_stat .bar .up {
+    height: 100%;
+    background-color: #ff4612;
+  }
 </style>
