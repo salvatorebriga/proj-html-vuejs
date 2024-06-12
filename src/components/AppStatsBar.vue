@@ -8,7 +8,7 @@ export default {
 };
 </script>
 <template>
-  <div class="mr_stat">
+  <div class="mr_stat p-4">
     <div class="d-flex justify-content-between">
       <h5>{{ name }}</h5>
       <h5>{{ percentage }}%</h5>

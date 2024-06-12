@@ -16,10 +16,13 @@ export default {
 <template>
   <section id="ms_stats">
     <div class="ms_big_container .container-xxl">
-      <div class=".container-md">
+      <div class="container-md">
         <div class="row row-cols-2 g-5">
           <div class="col">
-            <h3>Creative Leader<span class="text_primary">.</span></h3>
+            <h3 class="pb-1">
+              Creative Leader<span class="text_primary">.</span>
+            </h3>
+            <div class="line"></div>
             <div class="spacer pb-3"></div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -67,5 +70,13 @@ export default {
 
 .spacer {
   height: 1rem;
+}
+
+.line {
+  background-color: #ff4612;
+  width: 60px;
+  height: 2px;
+  margin-right: 0;
+  margin-bottom: 50px;
 }
 </style>
