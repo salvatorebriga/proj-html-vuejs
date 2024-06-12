@@ -1,6 +1,56 @@
 <script>
+import Links from "./AppFooterLinks.vue";
+import Contatti from "./AppFooterContatti.vue";
 export default {
   name: "AppFooter",
+  components: {
+    Links,
+    Contatti,
+  },
+  data() {
+    return {
+      titoloLinks: "Important links",
+      links: [
+        {
+          indirizzo: "#",
+          nome: "About me",
+        },
+        {
+          indirizzo: "#",
+          nome: "About us",
+        },
+        {
+          indirizzo: "#",
+          nome: "Language packs",
+        },
+        {
+          indirizzo: "#",
+          nome: "Become a coach",
+        },
+        {
+          indirizzo: "#",
+          nome: "Monthly events",
+        },
+      ],
+      contatti: [
+        {
+          icona: "fas fa-location-dot",
+          contatto: "457 BigBlue Street/, NY 10013",
+          indirizzo: "#",
+        },
+        {
+          icona: "fas fa-phone",
+          contatto: "(315)5512-2579",
+          indirizzo: "#",
+        },
+        {
+          icona: "fa-regular fa-envelope",
+          contatto: "everlead@qodeinteractive.com",
+          indirizzo: "#",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -45,22 +95,13 @@ export default {
           <div class="col-3">
             <ul>
               <li>
-                <h5>Important links</h5>
+                <h5>
+                  {{ titoloLinks }}
+                </h5>
               </li>
-              <li>
-                <a href="#">About me</a>
-              </li>
-              <li>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <a href="#">Language packs</a>
-              </li>
-              <li>
-                <a href="#">Become a coach</a>
-              </li>
-              <li>
-                <a href="#">Monthly events</a>
+              <!-- inserimento dinamico dei links -->
+              <li v-for="link in links">
+                <Links :indirizzo="link.indirizzo" :nome="link.nome" />
               </li>
             </ul>
           </div>
@@ -69,25 +110,14 @@ export default {
               <li>
                 <h5>Contact me</h5>
               </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-location-dot"></i> 457 BigBlue Street, NY
-                  10013</a
-                >
+              <!-- inserimento dinamico dei contatti -->
+              <li v-for="contatto in contatti">
+                <Contatti
+                  :icona="contatto.icona"
+                  :contatto="contatto.contatto"
+                  :indirizzo="contatto.indirizzo"
+                />
               </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-phone"></i>
-                  (315)5512-2579
-                </a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa-regular fa-envelope"></i>
-                  everlead@qodeinteractive.com</a
-                >
-              </li>
-              <li></li>
               <li>
                 <input type="text" placeholder="Your Name" />
                 <button type="submit">
