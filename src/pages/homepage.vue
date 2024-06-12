@@ -6,6 +6,7 @@
   import AppVideo from "../components/AppVideo.vue";
   import AppTestimonials from "../components/AppTestimonials.vue";
   import AppPricingPlans from "../components/AppPricingPlans.vue";
+  import WeCanTeachYou from "../components/WeCanTeachYou.vue";
   export default {
     name: "homePage",
 
@@ -17,6 +18,7 @@
       AppCreative,
       AppTestimonials,
       AppPricingPlans,
+      WeCanTeachYou,
     },
   };
 </script>
@@ -28,4 +30,5 @@
   <AppVideo />
   <AppTestimonials />
   <AppPricingPlans />
+  <WeCanTeachYou />
 </template>
