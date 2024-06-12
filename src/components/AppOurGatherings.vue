@@ -150,14 +150,14 @@ export default {
 
 .hoover-title {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0%;
+  left: 0%;
   opacity: 0;
   transition: opacity 0.3s ease;
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
+  width: 100%;
 }
 
 .hoover-title.show {
