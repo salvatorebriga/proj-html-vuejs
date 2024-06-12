@@ -30,7 +30,7 @@ export default {
             </div>
 
             <button type="submit" class="btn">
-              <span>Send</span> <i class="fas fa-arrow-right"></i>
+              <span>Send</span> <i class="fas fa-arrow-right-long"></i>
             </button>
           </form>
         </div>

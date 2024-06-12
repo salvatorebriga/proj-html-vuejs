@@ -68,14 +68,18 @@
               }
 
               button {
-                margin-left: -2px;
                 i {
+                  font-size: large;
                   color: transparent;
+                  margin-left: -40px;
+                  margin-right: 20px;
                 }
                 &:hover {
                   i {
-                    transition: all 0.3s ease-in-out;
                     color: $arancione;
+                    margin-left: -20px;
+                    margin-right: 0;
+                    transition: all 1s ease-in-out;
                   }
                 }
               }
