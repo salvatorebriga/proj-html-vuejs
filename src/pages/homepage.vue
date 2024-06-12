@@ -5,6 +5,7 @@
   import AppCreative from "../components/AppCreativeLeader.vue";
   import AppVideo from "../components/AppVideo.vue";
   import AppTestimonials from "../components/AppTestimonials.vue";
+  import AppPricingPlans from "../components/AppPricingPlans.vue";
   export default {
     name: "homePage",
 
@@ -15,6 +16,7 @@
       AppVideo,
       AppCreative,
       AppTestimonials,
+      AppPricingPlans,
     },
   };
 </script>
@@ -25,4 +27,5 @@
   <LatestNews />
   <AppVideo />
   <AppTestimonials />
+  <AppPricingPlans />
 </template>
