@@ -121,7 +121,9 @@ export default {
               <li>
                 <input type="text" placeholder="Your Name" />
                 <button type="submit">
-                  <span> <i class="fas fa-arrow-right"></i> SUBSCRIBE</span>
+                  <span>
+                    <i class="fas fa-arrow-right-long"></i> SUBSCRIBE</span
+                  >
                 </button>
               </li>
             </ul>
