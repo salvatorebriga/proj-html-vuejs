@@ -76,7 +76,6 @@ export default {
           category: "Educative",
           showTitle: false,
         },
-        // Aggiungi gli altri oggetti qui
       ],
     };
   },
