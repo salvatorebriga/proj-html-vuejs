@@ -11,10 +11,3 @@ export default {
     style="border: none"
   ></iframe>
 </template>
-<style scoped lang="scss">
-@use "../assets/scss/partials/variables.scss" as *;
-
-iframe {
-  margin-top: 90px;
-}
-</style>
