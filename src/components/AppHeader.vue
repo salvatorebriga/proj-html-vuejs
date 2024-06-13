@@ -126,12 +126,19 @@
                           >About Us</router-link
                         >
                       </li>
-                      <li>Subpage</li>
+                      <li><a href="#">About me</a></li>
                       <li>
                         <router-link to="/contact" class="dropdown-item"
                           >Contact</router-link
                         >
                       </li>
+                      <li><a href="#">Become a coach</a></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
                     </ul>
                   </li>
                   <!-- Blog Dropdown -->
@@ -371,6 +378,7 @@ main {
 
   li {
     width: 275px;
+    padding: 0;
   }
 
   a {
