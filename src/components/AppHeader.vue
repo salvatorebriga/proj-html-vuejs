@@ -6,7 +6,7 @@
         <div class="row align-items-center">
           <!-- left section -->
           <div class="col-md-8">
-            <ul class="list-unstyled list-inline">
+            <ul class="list-unstyled list-inline mr-margin-auto">
               <li class="list-inline-item">
                 <a href="#" class="link-font-size"
                   ><i class="fa-solid fa-phone icon-color"></i
@@ -35,7 +35,7 @@
 
           <!-- right section -->
           <div class="col-md-4 text-end">
-            <ul class="list-unstyled list-inline">
+            <ul class="list-unstyled list-inline mr-margin-auto">
               <li class="list-inline-item">
                 <a
                   href="#"
@@ -290,7 +290,7 @@ export default {
   z-index: 1100;
   background-color: #181515;
   color: #d2d2d2;
-  padding: 10px 0;
+  padding: 16px 0;
 
   a {
     color: #d2d2d2;
@@ -416,5 +416,9 @@ main {
 
 .icon-color {
   color: #ff4612;
+}
+
+.mr-margin-auto {
+  margin: auto;
 }
 </style>
