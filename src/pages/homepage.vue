@@ -8,7 +8,7 @@
   import AppPricingPlans from "../components/AppPricingPlans.vue";
   import WeCanTeachYou from "../components/WeCanTeachYou.vue";
   import bubbles from "../components/bubbles.vue";
-  import AppTeam from "../components/AppTeam.vue";
+  import AppJasonBickford from "../components/AppJasonBickford.vue";
   import UpcomingEvents from "../components/UpcomingEvents.vue";
   import AppContactUs from "../components/AppContactUs.vue";
   import AboutUsSwiper from "../components/AboutUsSwiper.vue";
@@ -25,7 +25,7 @@
       AppPricingPlans,
       WeCanTeachYou,
       bubbles,
-      AppTeam,
+      AppJasonBickford,
       UpcomingEvents,
       AppContactUs,
       AboutUsSwiper,
@@ -37,7 +37,7 @@
   <OurSpecialties />
   <AppCreative />
   <LatestNews />
-  <AppTeam />
+  <AppJasonBickford />
   <UpcomingEvents />
   <AppTestimonials />
   <AppVideo />
