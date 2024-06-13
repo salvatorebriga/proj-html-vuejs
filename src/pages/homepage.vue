@@ -7,6 +7,7 @@
   import AppTestimonials from "../components/AppTestimonials.vue";
   import AppPricingPlans from "../components/AppPricingPlans.vue";
   import WeCanTeachYou from "../components/WeCanTeachYou.vue";
+  import bubbles from "../components/bubbles.vue";
   export default {
     name: "homePage",
 
@@ -19,6 +20,7 @@
       AppTestimonials,
       AppPricingPlans,
       WeCanTeachYou,
+      bubbles,
     },
   };
 </script>
@@ -29,6 +31,7 @@
   <LatestNews />
   <AppTestimonials />
   <AppVideo />
+  <bubbles />
   <WeCanTeachYou />
   <AppPricingPlans />
 </template>
