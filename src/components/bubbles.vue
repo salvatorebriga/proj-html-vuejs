@@ -86,4 +86,38 @@
       }
     }
   }
+
+  @media screen and (max-width: 1140px) {
+    section {
+      .container {
+        .row {
+          flex-wrap: wrap;
+          .col {
+            width: calc(100% / 2);
+
+            .card {
+              h2 {
+              }
+
+              .line {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    section {
+      .container {
+        .row {
+          flex-wrap: wrap;
+          .col {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 </style>
