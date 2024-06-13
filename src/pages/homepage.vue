@@ -11,6 +11,7 @@
   import AppTeam from "../components/AppTeam.vue";
   import UpcomingEvents from "../components/UpcomingEvents.vue";
   import AppContactUs from "../components/AppContactUs.vue";
+  import AboutUsSwiper from "../components/AboutUsSwiper.vue";
   export default {
     name: "homePage",
 
@@ -27,6 +28,7 @@
       AppTeam,
       UpcomingEvents,
       AppContactUs,
+      AboutUsSwiper,
     },
   };
 </script>
@@ -42,5 +44,6 @@
   <bubbles />
   <WeCanTeachYou />
   <AppContactUs />
+  <AboutUsSwiper />
   <AppPricingPlans />
 </template>
