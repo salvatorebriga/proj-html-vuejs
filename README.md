@@ -35,6 +35,8 @@ Dopo un' analisi del Mock-up assegnatoci ci siamo spartiti le varie sezioni del 
 
 Dopo l'analisi del Mock-up abbiamo individuato degli elementi in comune tra le varie pagine, abbiamo sfruttato l' occasione del lavoro in team per collaborare con lo sviluppo delle parti in comune.
 
+#### QuickStart
+
 ```bash
   npm install
   npm run dev
