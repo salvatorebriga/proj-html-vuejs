@@ -3,7 +3,8 @@ import AboutUsJumbo from "../components/AboutUsJumbo.vue";
 import OurSpecialties from "../components/OurSpecialties.vue";
 import CreativeLeader from "../components/AppCreativeLeader.vue";
 import OurGatherings from "../components/AppOurGatherings.vue";
-import AppTeam from "../components/AppTeam.vue";
+// import AppTeam from "../components/AppTeam.vue";
+import AppJasonBickford from "../components/AppJasonBickford.vue";
 
 export default {
   name: "aboutUs",
@@ -13,14 +14,16 @@ export default {
     OurSpecialties,
     OurGatherings,
     CreativeLeader,
-    AppTeam,
+    // AppTeam,
+    AppJasonBickford,
   },
 };
 </script>
 <template>
   <AboutUsJumbo />
   <OurSpecialties />
-  <AppTeam />
+  <!-- <AppTeam /> -->
+  <AppJasonBickford />
   <OurGatherings />
   <CreativeLeader />
 </template>

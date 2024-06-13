@@ -91,7 +91,7 @@
                   <li class="nav-item dropdown">
                     <router-link
                       to="/"
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle dropdown-item"
                       id="homeDropdown"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -101,7 +101,7 @@
                     <ul class="dropdown-menu" aria-labelledby="homeDropdown">
                       <li class="list-inline-item">
                         <router-link :to="{ name: 'homepage' }"
-                          >homepage</router-link
+                          >Homepage</router-link
                         >
                       </li>
                       <li><a href="#">Business coaching</a></li>
