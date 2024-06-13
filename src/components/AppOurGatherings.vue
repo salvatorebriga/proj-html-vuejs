@@ -104,7 +104,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container p-5">
     <div class="row">
       <div class="col-md-12 text-center">
         <h2>Our Gatherings<span>.</span></h2>
