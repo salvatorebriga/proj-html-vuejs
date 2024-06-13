@@ -131,7 +131,9 @@
               display: flex;
               bottom: 0;
               left: 0;
+              cursor: pointer;
               color: white;
+
               .prev {
                 padding: 15px;
                 background-color: #ff4612;
@@ -140,6 +142,10 @@
                 align-items: center;
                 i {
                   font-size: 20px;
+                }
+
+                &:hover {
+                  background-color: #ef4212;
                 }
               }
               .next {
@@ -150,6 +156,10 @@
                 align-items: center;
                 i {
                   font-size: 20px;
+                }
+
+                &:hover {
+                  background-color: #ef4212;
                 }
               }
             }
@@ -207,6 +217,11 @@
               i {
                 font-size: 25px;
                 color: #ff4612;
+                cursor: pointer;
+
+                &:hover {
+                  color: #ef4212;
+                }
               }
             }
           }
