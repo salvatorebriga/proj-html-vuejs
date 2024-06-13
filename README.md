@@ -11,7 +11,9 @@ La richiesta del progetto è quella di riprodurre il layout assegnato.
 Nel brief venivano richiesti dei requisiti tecnici da soddifsfare:
 
 - Le voci di menù Header e Footer devono essere popolate dinamicamente come una sezione a scelta della HomePage.
-  E` stato richiesto di utilizzare delle specifiche tecnologie:
+
+È stato richiesto di utilizzare delle specifiche tecnologie:
+
 - HTML
 - CSS / SCSS
 - Vue.js e Vite
