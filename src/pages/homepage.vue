@@ -10,6 +10,7 @@
   import bubbles from "../components/bubbles.vue";
   import AppTeam from "../components/AppTeam.vue";
   import UpcomingEvents from "../components/UpcomingEvents.vue";
+  import AppContactUs from "../components/AppContactUs.vue";
   export default {
     name: "homePage",
 
@@ -25,6 +26,7 @@
       bubbles,
       AppTeam,
       UpcomingEvents,
+      AppContactUs,
     },
   };
 </script>
@@ -39,5 +41,6 @@
   <AppVideo />
   <bubbles />
   <WeCanTeachYou />
+  <AppContactUs />
   <AppPricingPlans />
 </template>
