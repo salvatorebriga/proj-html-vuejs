@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid mb-5 mr-bg-color">
+  <div class="container-fluid mr-bg-color">
     <div class="row">
       <div class="col-sm-4 position-relative">
         <div

@@ -136,9 +136,8 @@
                       <li>Pricing plans</li>
                       <li>Get in touch</li>
                       <li>Portfolio lists</li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>Gallery list</li>
+                      <li>404 error page</li>
                     </ul>
                   </li>
                   <!-- Blog Dropdown -->
