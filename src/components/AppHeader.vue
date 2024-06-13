@@ -5,36 +5,36 @@
       <div class="container">
         <div class="row align-items-center">
           <!-- left section -->
-          <div class="col-md-6">
+          <div class="col-md-8">
             <ul class="list-unstyled list-inline">
               <li class="list-inline-item">
                 <a href="#" class="link-font-size"
-                  ><i class="fa-solid fa-phone"></i
-                  ><span>Call +44 300 303 0266</span></a
+                  ><i class="fa-solid fa-phone icon-color"></i
+                  ><span class="ps-2">Call +44 300 303 0266</span></a
                 >
               </li>
               <li class="list-inline-item">
                 <a href="#"
-                  ><i class="fa-regular fa-envelope"></i
-                  ><span>everlead@qodeinteractive.com</span></a
+                  ><i class="fa-regular fa-envelope icon-color"></i
+                  ><span class="ps-2">everlead@qodeinteractive.com</span></a
                 >
               </li>
-              <li class="list-inline-item">follow us</li>
+              <li class="list-inline-item">FOLLOW US</li>
               <li class="list-inline-item">
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin-in social"></i>
               </li>
               <li class="list-inline-item">
-                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-facebook-f social"></i>
               </li>
               <li class="list-inline-item">
-                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-twitter social"></i>
               </li>
             </ul>
           </div>
           <!-- left section -->
 
           <!-- right section -->
-          <div class="col-md-6 text-end">
+          <div class="col-md-4 text-end">
             <ul class="list-unstyled list-inline">
               <li class="list-inline-item">
                 <a
@@ -42,7 +42,8 @@
                   class="ms-3"
                   data-toggle="modal"
                   data-target="#loginModal"
-                  ><i class="fa-regular fa-user"></i><span>login</span></a
+                  ><i class="fa-regular fa-user icon-color"></i
+                  ><span class="ps-2">login</span></a
                 >
               </li>
               <li class="list-inline-item">
@@ -51,7 +52,8 @@
                   class="ms-3"
                   data-toggle="modal"
                   data-target="#registerModal"
-                  ><i class="fa-solid fa-pen"></i><span>register</span></a
+                  ><i class="fa-solid fa-pen icon-color"></i
+                  ><span class="ps-2">register</span></a
                 >
               </li>
             </ul>
@@ -202,14 +204,11 @@
                       aria-expanded="false"
                       >Elements</a
                     >
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="elementsDropdown"
-                    >
-                      <li>Subpage</li>
-                      <li>Subpage</li>
-                      <li>Subpage</li>
-                    </ul>
+                    <!-- Utilizzo del componente Dropdown -->
+                    <AppElementDd
+                      :items="elementsSubpages"
+                      labelId="elementsDropdown"
+                    />
                   </li>
                 </ul>
               </div>
@@ -246,13 +245,23 @@
 </template>
 
 <script>
+import AppElementDd from "./AppElementDd.vue";
+
 export default {
   name: "AppHeader",
+  components: {
+    AppElementDd,
+  },
   data() {
     return {
       searchVisible: false,
       sideMenuOpen: false,
       isHomePage: false,
+      elementsSubpages: [
+        { name: "Subpage 1", link: "#" },
+        { name: "Subpage 2", link: "#" },
+        { name: "Subpage 3", link: "#" },
+      ],
     };
   },
   mounted() {
@@ -387,5 +396,25 @@ main {
       color: #cccccc;
     }
   }
+}
+
+.social {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding-top: 6px;
+  margin-right: 10px;
+  font-size: 12px;
+
+  &:hover {
+    background-color: #ff4612;
+  }
+}
+
+.icon-color {
+  color: #ff4612;
 }
 </style>
