@@ -9,6 +9,7 @@
   import WeCanTeachYou from "../components/WeCanTeachYou.vue";
   import bubbles from "../components/bubbles.vue";
   import AppTeam from "../components/AppTeam.vue";
+  import UpcomingEvents from "../components/UpcomingEvents.vue";
   export default {
     name: "homePage",
 
@@ -23,6 +24,7 @@
       WeCanTeachYou,
       bubbles,
       AppTeam,
+      UpcomingEvents,
     },
   };
 </script>
@@ -32,6 +34,7 @@
   <AppCreative />
   <LatestNews />
   <AppTeam />
+  <UpcomingEvents />
   <AppTestimonials />
   <AppVideo />
   <bubbles />
