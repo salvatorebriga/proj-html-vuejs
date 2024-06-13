@@ -8,6 +8,7 @@
   import AppPricingPlans from "../components/AppPricingPlans.vue";
   import WeCanTeachYou from "../components/WeCanTeachYou.vue";
   import bubbles from "../components/bubbles.vue";
+  import AppTeam from "../components/AppTeam.vue";
   export default {
     name: "homePage",
 
@@ -21,6 +22,7 @@
       AppPricingPlans,
       WeCanTeachYou,
       bubbles,
+      AppTeam,
     },
   };
 </script>
@@ -29,6 +31,7 @@
   <OurSpecialties />
   <AppCreative />
   <LatestNews />
+  <AppTeam />
   <AppTestimonials />
   <AppVideo />
   <bubbles />
