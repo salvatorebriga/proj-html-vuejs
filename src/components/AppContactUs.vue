@@ -39,7 +39,7 @@
     .container {
       .row {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         .col {
           width: 50%;
           .cardL {
@@ -120,6 +120,22 @@
             .orange {
               background-color: #ff4612;
               color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    section {
+      .container {
+        .row {
+          flex-direction: column;
+          .col {
+            width: calc(100%);
+            .cardL {
+              padding-top: 0px;
             }
           }
         }
