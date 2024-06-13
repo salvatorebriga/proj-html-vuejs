@@ -101,6 +101,7 @@
 
     .row {
       .col {
+        margin-bottom: 20px;
         .card {
           text-align: left;
           padding: 50px;
