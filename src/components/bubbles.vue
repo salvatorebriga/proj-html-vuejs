@@ -94,14 +94,6 @@
           flex-wrap: wrap;
           .col {
             width: calc(100% / 2);
-
-            .card {
-              h2 {
-              }
-
-              .line {
-              }
-            }
           }
         }
       }
