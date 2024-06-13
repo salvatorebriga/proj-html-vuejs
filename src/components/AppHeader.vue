@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- header top -->
-    <div class="top-bar mb-3" v-show="!isHomePage">
+    <div class="top-bar" v-show="!isHomePage">
       <div class="container">
         <div class="row align-items-center">
           <!-- left section -->
@@ -133,9 +133,9 @@
                         >
                       </li>
                       <li><a href="#">Become a coach</a></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>Pricing plans</li>
+                      <li>Get in touch</li>
+                      <li>Portfolio lists</li>
                       <li></li>
                       <li></li>
                       <li></li>
