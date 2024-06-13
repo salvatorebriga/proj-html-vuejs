@@ -16,7 +16,7 @@ export default {
           nome: "About me",
         },
         {
-          indirizzo: "#",
+          indirizzo: "/about",
           nome: "About us",
         },
         {
@@ -32,6 +32,7 @@ export default {
           nome: "Monthly events",
         },
       ],
+      titoloContatti: "Contact me",
       contatti: [
         {
           icona: "fas fa-location-dot",
@@ -108,7 +109,7 @@ export default {
           <div class="col-3">
             <ul>
               <li>
-                <h5>Contact me</h5>
+                <h5>{{ titoloContatti }}</h5>
               </li>
               <!-- inserimento dinamico dei contatti -->
               <li v-for="contatto in contatti">
